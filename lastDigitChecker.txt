@@ -1,0 +1,18 @@
+public class LastDigitChecker {
+    // write your code here
+    public static boolean hasSameLastDigit(int a,int b ,int c){
+        if((a>=10 && a<=1000) && (b>=10 && b<=1000) && (c>=10 && c<=1000)){
+            int al = a%10;
+            int bl = b%10;
+            int cl = c%10;
+            if(al==bl || bl==cl || cl==al) return true;
+            else
+            return false;
+        }
+        return false;
+    }
+    public static boolean isValid(int number){
+        if(number>=10 && number<=1000) return true;
+        else return false;
+    }
+}
